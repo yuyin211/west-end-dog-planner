@@ -22,11 +22,11 @@ of each story.
 **Purpose**: Create the static front-end project foundation without build tooling, backend,
 authentication, database, or live application APIs.
 
-- [ ] T001 Create static entry point with Leaflet CSS/JS links and root app containers in `index.html`
-- [ ] T002 [P] Create mobile-first stylesheet scaffold with CSS variables, base typography, touch targets, and responsive shell in `assets/css/styles.css`
-- [ ] T003 [P] Create JavaScript module files for app, state, storage, map, planner, navigation, and UI in `assets/js/app.js`, `assets/js/state.js`, `assets/js/storage.js`, `assets/js/map.js`, `assets/js/planner.js`, `assets/js/navigation.js`, and `assets/js/ui.js`
-- [ ] T004 [P] Create local mock-data module files in `assets/data/destinations.js`, `assets/data/facilities.js`, `assets/data/routes.js`, `assets/data/scenarios.js`, and `assets/data/weather.js`
-- [ ] T005 Initialize app bootstrapping that imports modules, creates initial state, and renders the first screen in `assets/js/app.js`
+- [X] T001 Create static entry point with Leaflet CSS/JS links and root app containers in `index.html`
+- [X] T002 [P] Create mobile-first stylesheet scaffold with CSS variables, base typography, touch targets, and responsive shell in `assets/css/styles.css`
+- [X] T003 [P] Create JavaScript module files for app, state, storage, map, planner, navigation, and UI in `assets/js/app.js`, `assets/js/state.js`, `assets/js/storage.js`, `assets/js/map.js`, `assets/js/planner.js`, `assets/js/navigation.js`, and `assets/js/ui.js`
+- [X] T004 [P] Create local mock-data module files in `assets/data/destinations.js`, `assets/data/facilities.js`, `assets/data/routes.js`, `assets/data/scenarios.js`, and `assets/data/weather.js`
+- [X] T005 Initialize app bootstrapping that imports modules, creates initial state, and renders the first screen in `assets/js/app.js`
 
 ---
 
@@ -37,16 +37,16 @@ on.
 
 **CRITICAL**: No user story work should begin until this phase is complete.
 
-- [ ] T006 Define central app state shape and reset defaults for planning, review, navigation, alerts, and saved-dog selection in `assets/js/state.js`
-- [ ] T007 [P] Implement generic view rendering helpers, screen switching, bottom-sheet helpers, and progressive-disclosure helpers in `assets/js/ui.js`
-- [ ] T008 [P] Implement localStorage read/write/reset helpers for `westEndDogPlanner.savedDogs` in `assets/js/storage.js`
-- [ ] T009 [P] Add curated West End destination records with activity tags, coordinates, dog-access details, suitability tags, and source/update notes in `assets/data/destinations.js`
-- [ ] T010 [P] Add facility records for water, bins, seating/shade, toilets, and parking/access points in `assets/data/facilities.js`
-- [ ] T011 [P] Add primary route, Plan B route, route segments, route steps, per-step facility distances, and route summaries in `assets/data/routes.js`
-- [ ] T012 [P] Add deterministic crowd-change scenario event with predefined route step, alert copy, affected segment ids, Plan B link, and optional vibration pattern in `assets/data/scenarios.js`
-- [ ] T013 [P] Add simulated planning weather context with temperature label, planning note, and explicit simulated flag in `assets/data/weather.js`
-- [ ] T014 Implement Leaflet map initialization, OpenStreetMap tile layer, overlay layer groups, and safe map reset behaviour in `assets/js/map.js`
-- [ ] T015 Add visible Leaflet/OpenStreetMap attribution and document the internet requirement for map tiles in `index.html` and `specs/001-dog-outing-planner/quickstart.md`
+- [X] T006 Define central app state shape and reset defaults for planning, review, navigation, alerts, and saved-dog selection in `assets/js/state.js`
+- [X] T007 [P] Implement generic view rendering helpers, screen switching, bottom-sheet helpers, and progressive-disclosure helpers in `assets/js/ui.js`
+- [X] T008 [P] Implement localStorage read/write/reset helpers for `westEndDogPlanner.savedDogs` in `assets/js/storage.js`
+- [X] T009 [P] Add curated West End destination records with activity tags, coordinates, dog-access details, suitability tags, and source/update notes in `assets/data/destinations.js`
+- [X] T010 [P] Add facility records for water, bins, seating/shade, toilets, and parking/access points in `assets/data/facilities.js`
+- [X] T011 [P] Add primary route, Plan B route, route segments, route steps, per-step facility distances, and route summaries in `assets/data/routes.js`
+- [X] T012 [P] Add deterministic crowd-change scenario event with predefined route step, alert copy, affected segment ids, Plan B link, and optional vibration pattern in `assets/data/scenarios.js`
+- [X] T013 [P] Add simulated planning weather context with temperature label, planning note, and explicit simulated flag in `assets/data/weather.js`
+- [X] T014 Implement Leaflet map initialization, OpenStreetMap tile layer, overlay layer groups, and safe map reset behaviour in `assets/js/map.js`
+- [X] T015 Add visible Leaflet/OpenStreetMap attribution and document the internet requirement for map tiles in `index.html` and `specs/001-dog-outing-planner/quickstart.md`
 
 **Checkpoint**: Foundation ready. The app shell loads, mock data imports, state initializes, and an empty Leaflet map can render without backend services.
 
@@ -62,16 +62,16 @@ activities and a time, add a preference, and confirm that a suggested itinerary 
 
 ### Implementation for User Story 1
 
-- [ ] T016 [P] [US1] Render the start and dog-selection screen with saved dog list placeholder and continue-without-dog action in `assets/js/ui.js`
-- [ ] T017 [P] [US1] Render activity selection controls for market, food, shopping, riverside walk, and rest/picnic in `assets/js/ui.js`
-- [ ] T018 [P] [US1] Render available-time selection controls with concise mobile labels in `assets/js/ui.js`
-- [ ] T019 [P] [US1] Render lightweight dog preference controls with mutually exclusive no-specific-preference behaviour in `assets/js/ui.js`
-- [ ] T020 [US1] Implement planning state updates for selected dog, activities, available time, and temporary preferences in `assets/js/state.js`
-- [ ] T021 [US1] Implement itinerary generation using selected activities, available time, preferences, destinations, routes, and weather data in `assets/js/planner.js`
-- [ ] T022 [US1] Add validation and inline feedback when the user tries to generate an outing without selecting activities in `assets/js/planner.js`
-- [ ] T023 [US1] Add simpler-itinerary fallback messaging when selected activities or time cannot form a believable multi-stop outing in `assets/js/planner.js`
-- [ ] T024 [US1] Render generated itinerary summary handoff from planning to review mode in `assets/js/ui.js`
-- [ ] T025 [US1] Add explicit simulated-data disclosure for planning weather and generated prototype content in `assets/js/ui.js`
+- [X] T016 [P] [US1] Render the start and dog-selection screen with saved dog list placeholder and continue-without-dog action in `assets/js/ui.js`
+- [X] T017 [P] [US1] Render activity selection controls for market, food, shopping, riverside walk, and rest/picnic in `assets/js/ui.js`
+- [X] T018 [P] [US1] Render available-time selection controls with concise mobile labels in `assets/js/ui.js`
+- [X] T019 [P] [US1] Render lightweight dog preference controls with mutually exclusive no-specific-preference behaviour in `assets/js/ui.js`
+- [X] T020 [US1] Implement planning state updates for selected dog, activities, available time, and temporary preferences in `assets/js/state.js`
+- [X] T021 [US1] Implement itinerary generation using selected activities, available time, preferences, destinations, routes, and weather data in `assets/js/planner.js`
+- [X] T022 [US1] Add validation and inline feedback when the user tries to generate an outing without selecting activities in `assets/js/planner.js`
+- [X] T023 [US1] Add simpler-itinerary fallback messaging when selected activities or time cannot form a believable multi-stop outing in `assets/js/planner.js`
+- [X] T024 [US1] Render generated itinerary summary handoff from planning to review mode in `assets/js/ui.js`
+- [X] T025 [US1] Add explicit simulated-data disclosure for planning weather and generated prototype content in `assets/js/ui.js`
 
 **Checkpoint**: User Story 1 is independently testable as the MVP planning flow.
 
@@ -87,14 +87,14 @@ access details, open details on demand, and replace one destination or route opt
 
 ### Implementation for User Story 2
 
-- [ ] T026 [P] [US2] Render itinerary review cards with ordered stops, destination summaries, and primary dog-access information in `assets/js/ui.js`
-- [ ] T027 [P] [US2] Render route summary with approximate total distance, estimated duration, and selected activity coverage in `assets/js/ui.js`
-- [ ] T028 [US2] Render on-demand destination detail sheet with access rules, source/update note, and facility context in `assets/js/ui.js`
-- [ ] T029 [US2] Implement destination replacement logic using replacement groups and suitability tags in `assets/js/planner.js`
-- [ ] T030 [US2] Implement route option adjustment that swaps between allowed predefined route variants without recalculating routes in `assets/js/planner.js`
-- [ ] T031 [US2] Update review state and rerender itinerary/map overlays after destination or route adjustment in `assets/js/state.js`
-- [ ] T032 [US2] Add contextual weather, crowd, and dog-specific considerations as secondary review content in `assets/js/ui.js`
-- [ ] T033 [US2] Add start-outing action that transitions from review mode to active navigation mode in `assets/js/ui.js`
+- [X] T026 [P] [US2] Render itinerary review cards with ordered stops, destination summaries, and primary dog-access information in `assets/js/ui.js`
+- [X] T027 [P] [US2] Render route summary with approximate total distance, estimated duration, and selected activity coverage in `assets/js/ui.js`
+- [X] T028 [US2] Render on-demand destination detail sheet with access rules, source/update note, and facility context in `assets/js/ui.js`
+- [X] T029 [US2] Implement destination replacement logic using replacement groups and suitability tags in `assets/js/planner.js`
+- [X] T030 [US2] Implement route option adjustment that swaps between allowed predefined route variants without recalculating routes in `assets/js/planner.js`
+- [X] T031 [US2] Update review state and rerender itinerary/map overlays after destination or route adjustment in `assets/js/state.js`
+- [X] T032 [US2] Add contextual weather, crowd, and dog-specific considerations as secondary review content in `assets/js/ui.js`
+- [X] T033 [US2] Add start-outing action that transitions from review mode to active navigation mode in `assets/js/ui.js`
 
 **Checkpoint**: User Story 2 is independently testable after generating an itinerary from US1.
 
@@ -110,14 +110,14 @@ destination, distance/time, nearest water, nearest bin, and manual route-step pr
 
 ### Implementation for User Story 3
 
-- [ ] T034 [P] [US3] Render simplified active-navigation layout with route, next destination, distance/time, nearest water, and nearest bin regions in `assets/js/ui.js`
-- [ ] T035 [P] [US3] Add active-navigation CSS for glanceable labels, sticky controls, compact map area, and large touch targets in `assets/css/styles.css`
-- [ ] T036 [US3] Implement manual route-step progression actions and bounds handling in `assets/js/navigation.js`
-- [ ] T037 [US3] Update active-navigation state for current route id, current step index, next destination, and per-step facility distances in `assets/js/state.js`
-- [ ] T038 [US3] Render current route, route-step marker, destination markers, and essential facility markers on the Leaflet map in `assets/js/map.js`
-- [ ] T039 [US3] Render optional on-demand panels for additional facilities, destination details, and access information in `assets/js/ui.js`
-- [ ] T040 [US3] Ensure active navigation hides nonessential planning/review content while preserving access to on-demand details in `assets/js/ui.js`
-- [ ] T041 [US3] Add active-navigation completion or final-stop state when the last predefined route step is reached in `assets/js/navigation.js`
+- [X] T034 [P] [US3] Render simplified active-navigation layout with route, next destination, distance/time, nearest water, and nearest bin regions in `assets/js/ui.js`
+- [X] T035 [P] [US3] Add active-navigation CSS for glanceable labels, sticky controls, compact map area, and large touch targets in `assets/css/styles.css`
+- [X] T036 [US3] Implement manual route-step progression actions and bounds handling in `assets/js/navigation.js`
+- [X] T037 [US3] Update active-navigation state for current route id, current step index, next destination, and per-step facility distances in `assets/js/state.js`
+- [X] T038 [US3] Render current route, route-step marker, destination markers, and essential facility markers on the Leaflet map in `assets/js/map.js`
+- [X] T039 [US3] Render optional on-demand panels for additional facilities, destination details, and access information in `assets/js/ui.js`
+- [X] T040 [US3] Ensure active navigation hides nonessential planning/review content while preserving access to on-demand details in `assets/js/ui.js`
+- [X] T041 [US3] Add active-navigation completion or final-stop state when the last predefined route step is reached in `assets/js/navigation.js`
 
 **Checkpoint**: User Story 3 is independently testable after US1 and US2 create a reviewed itinerary.
 
@@ -133,14 +133,14 @@ alert, inspect Plan B overlay, and verify both keep-current and switch-route dec
 
 ### Implementation for User Story 4
 
-- [ ] T042 [P] [US4] Style route segment crowd levels for low, moderate, and high crowd states in `assets/css/styles.css`
-- [ ] T043 [US4] Draw crowd-level route segment overlays on the Leaflet map using scenario and route segment data in `assets/js/map.js`
-- [ ] T044 [US4] Detect predefined crowd-change trigger step during manual route-step advancement in `assets/js/navigation.js`
-- [ ] T045 [US4] Render contextual crowd alert with minimal copy, simulated-data cue, keep-current action, and view Plan B action in `assets/js/ui.js`
-- [ ] T046 [US4] Add optional vibration request with graceful visual fallback when the crowd alert appears in `assets/js/navigation.js`
-- [ ] T047 [US4] Render highlighted Plan B route overlay and simple comparison labels for quieter, extra time, and extra distance in `assets/js/map.js`
-- [ ] T048 [US4] Implement keep-current-route decision that dismisses or resolves the alert without changing the route in `assets/js/navigation.js`
-- [ ] T049 [US4] Implement switch-to-Plan-B decision that updates route state, map overlay, route steps, and active-navigation labels in `assets/js/navigation.js`
+- [X] T042 [P] [US4] Style route segment crowd levels for low, moderate, and high crowd states in `assets/css/styles.css`
+- [X] T043 [US4] Draw crowd-level route segment overlays on the Leaflet map using scenario and route segment data in `assets/js/map.js`
+- [X] T044 [US4] Detect predefined crowd-change trigger step during manual route-step advancement in `assets/js/navigation.js`
+- [X] T045 [US4] Render contextual crowd alert with minimal copy, simulated-data cue, keep-current action, and view Plan B action in `assets/js/ui.js`
+- [X] T046 [US4] Add optional vibration request with graceful visual fallback when the crowd alert appears in `assets/js/navigation.js`
+- [X] T047 [US4] Render highlighted Plan B route overlay and simple comparison labels for quieter, extra time, and extra distance in `assets/js/map.js`
+- [X] T048 [US4] Implement keep-current-route decision that dismisses or resolves the alert without changing the route in `assets/js/navigation.js`
+- [X] T049 [US4] Implement switch-to-Plan-B decision that updates route state, map overlay, route steps, and active-navigation labels in `assets/js/navigation.js`
 
 **Checkpoint**: User Story 4 is independently testable once active navigation is functional.
 
@@ -157,13 +157,13 @@ saved.
 
 ### Implementation for User Story 5
 
-- [ ] T050 [P] [US5] Render save-dog-preferences controls with dog name input and save/skip actions in `assets/js/ui.js`
-- [ ] T051 [US5] Implement dog preference validation for required dog name on save and mutually exclusive no-specific-preference state in `assets/js/storage.js`
-- [ ] T052 [US5] Implement saved dog create, read, update, and delete helpers for `westEndDogPlanner.savedDogs` in `assets/js/storage.js`
-- [ ] T053 [US5] Load saved dog options at app startup and show them on the start/planning screen in `assets/js/app.js`
-- [ ] T054 [US5] Apply selected saved dog preferences to planning state without requiring account or authentication data in `assets/js/state.js`
-- [ ] T055 [US5] Implement temporary outing-specific preference changes that do not overwrite saved dog data unless explicitly saved in `assets/js/state.js`
-- [ ] T056 [US5] Add facilitator reset control for clearing saved dog preferences and returning to default prototype state in `assets/js/ui.js`
+- [X] T050 [P] [US5] Render save-dog-preferences controls with dog name input and save/skip actions in `assets/js/ui.js`
+- [X] T051 [US5] Implement dog preference validation for required dog name on save and mutually exclusive no-specific-preference state in `assets/js/storage.js`
+- [X] T052 [US5] Implement saved dog create, read, update, and delete helpers for `westEndDogPlanner.savedDogs` in `assets/js/storage.js`
+- [X] T053 [US5] Load saved dog options at app startup and show them on the start/planning screen in `assets/js/app.js`
+- [X] T054 [US5] Apply selected saved dog preferences to planning state without requiring account or authentication data in `assets/js/state.js`
+- [X] T055 [US5] Implement temporary outing-specific preference changes that do not overwrite saved dog data unless explicitly saved in `assets/js/state.js`
+- [X] T056 [US5] Add facilitator reset control for clearing saved dog preferences and returning to default prototype state in `assets/js/ui.js`
 
 **Checkpoint**: User Story 5 is independently testable as local preference persistence in the same browser.
 
@@ -174,16 +174,16 @@ saved.
 **Purpose**: Improve mobile usability, progressive disclosure, transparency, and validation across
 the full prototype.
 
-- [ ] T057 [P] Audit all screens for mobile-first spacing, readable text, and touch target size in `assets/css/styles.css`
-- [ ] T058 [P] Add focused empty/error states for no activity selected, no saved dogs, unavailable replacement, and unsupported vibration in `assets/js/ui.js`
-- [ ] T059 [P] Add visible simulation labels for crowd, weather, facility status, route alerts, and prototype overlays in `assets/js/ui.js`
-- [ ] T060 Verify end-to-end planning, review, active navigation, crowd alert, Plan B, and saved dog flow against `specs/001-dog-outing-planner/quickstart.md`
-- [ ] T061 Verify deterministic scenario repeatability by running the predefined route-step alert flow twice and documenting the expected repeatability criteria in `specs/001-dog-outing-planner/quickstart.md`
-- [ ] T062 Verify no backend, authentication, database server, live weather API, live crowd API, or full routing engine dependency exists in `index.html` and `assets/js/app.js`
-- [ ] T063 Verify GitHub Pages compatibility by checking relative asset paths and static-only runtime assumptions in `index.html`
-- [ ] T064 Smoke test the prototype in a mobile viewport and desktop facilitator viewport, then tune responsive layout in `assets/css/styles.css`
-- [ ] T065 Verify the initial prototype screen is usable within 3 seconds on a typical mobile connection or throttled mobile profile, then document any adjustment needed in `specs/001-dog-outing-planner/quickstart.md`
-- [ ] T066 Update quickstart notes with final local run command, known browser expectations, and usability-test validation steps in `specs/001-dog-outing-planner/quickstart.md`
+- [X] T057 [P] Audit all screens for mobile-first spacing, readable text, and touch target size in `assets/css/styles.css`
+- [X] T058 [P] Add focused empty/error states for no activity selected, no saved dogs, unavailable replacement, and unsupported vibration in `assets/js/ui.js`
+- [X] T059 [P] Add visible simulation labels for crowd, weather, facility status, route alerts, and prototype overlays in `assets/js/ui.js`
+- [X] T060 Verify end-to-end planning, review, active navigation, crowd alert, Plan B, and saved dog flow against `specs/001-dog-outing-planner/quickstart.md`
+- [X] T061 Verify deterministic scenario repeatability by running the predefined route-step alert flow twice and documenting the expected repeatability criteria in `specs/001-dog-outing-planner/quickstart.md`
+- [X] T062 Verify no backend, authentication, database server, live weather API, live crowd API, or full routing engine dependency exists in `index.html` and `assets/js/app.js`
+- [X] T063 Verify GitHub Pages compatibility by checking relative asset paths and static-only runtime assumptions in `index.html`
+- [X] T064 Smoke test the prototype in a mobile viewport and desktop facilitator viewport, then tune responsive layout in `assets/css/styles.css`
+- [X] T065 Verify the initial prototype screen is usable within 3 seconds on a typical mobile connection or throttled mobile profile, then document any adjustment needed in `specs/001-dog-outing-planner/quickstart.md`
+- [X] T066 Update quickstart notes with final local run command, known browser expectations, and usability-test validation steps in `specs/001-dog-outing-planner/quickstart.md`
 
 ---
 

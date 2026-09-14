@@ -5,6 +5,7 @@
 - A current desktop browser for development checks.
 - A smartphone or mobile browser emulator for mobile-first usability checks.
 - Internet access for OpenStreetMap tiles when using the Leaflet base map.
+- The map must show visible Leaflet/OpenStreetMap attribution when tiles load.
 
 ## Run Locally
 
@@ -24,6 +25,12 @@ http://localhost:8000/
 
 If no local server is available, most screens should still be inspectable by opening `index.html`,
 but map tiles and module loading are more reliable through a local server.
+
+Known browser expectations:
+
+- Current Chrome, Edge, Safari, and mobile browser equivalents should support the prototype.
+- Vibration is optional; the visual crowd alert is the complete fallback.
+- Internet access is required only for Leaflet/OpenStreetMap CDN assets and OpenStreetMap tiles.
 
 ## Validation Scenario 1: Plan a Multi-Activity Outing
 
@@ -80,6 +87,8 @@ Expected outcome:
 - Plan B comparison labels are visible and simple.
 - The user's keep/switch choice controls the route state.
 - The flow works without vibration.
+- Repeatability criteria: advancing to route step 2 on Route A always shows the same crowd alert,
+  the same affected segment, and the same Plan B comparison labels.
 
 ## Validation Scenario 5: Saved Dog Preferences
 
@@ -106,3 +115,20 @@ Expected outcome:
 
 - The prototype can be served as a static site.
 - No server database, authentication, or live application API is required.
+- Leaflet and OpenStreetMap tile access are the only external runtime dependencies.
+
+## Performance Smoke Check
+
+1. Open the initial prototype screen on a typical mobile connection or throttled mobile profile.
+2. Confirm the first planning screen is readable and interactive within 3 seconds.
+3. If the map is slow, confirm the planning controls remain usable while tiles load.
+
+Expected outcome:
+
+- The initial planning screen is usable within 3 seconds.
+- Any map tile delay does not block planning interaction.
+
+Latest validation note:
+
+- Chrome mobile viewport smoke check completed with the first planning screen usable in under
+  3 seconds and deterministic crowd-alert repeatability confirmed across two runs.
